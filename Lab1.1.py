@@ -29,9 +29,3 @@ a = torch.FloatTensor(100, 780, 780, 3).random_(1, 100)
 print(a[0].mean())
 print(a[3].mean())
 
-#Задание 4.
-x = torch.FloatTensor(1024, 1024).uniform_()
-print(x.is_cuda)
-
-x = x.cuda()
-print(x.is_cuda)
